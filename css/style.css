@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tilt+Neon&display=swap');
+
+/* 1 rem = 10px*/
+html{
+    font-size: 62.5%;
+}
+
+/*Selector universal*/
+*{
+    font-family: 'Tilt Neon', cursive; 
+}
+
+.navbar{
+    background-color: #2B6FA6;
+    
+}
+.navbar img{
+    width: 50px;
+}
+
+.navbar ul li a{
+    font-size: 2rem;
+    color: aliceblue;
+    margin-right: 1em;
+
+}
+
+.navbar ul li a:hover{
+    color: black;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.carousel-inner {
+    height: 80rem;
+}
+.persona{
+    width: 30rem;
+    height: 30rem;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+}
+
+
+h1,h2,h3{
+    font-family: 'Tilt Neon', cursive;
+    color: rgb(27, 68, 102); 
+}
+
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-imagen{
+    background-image: url(../img/back-ground.jpg);
+    background-repeat:calc(100%);
+}
+
+header img{
+    width: 100%;
+    height: 60rem;
+}
+
+.titulo-freelancer{  
+    background-color: rgba(255, 255, 255, 0.70);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contenedor{
+    width: 90%;
+    background-color: rgba(176, 182, 187, 0.695);
+    margin: 3rem;
+    padding: 1.5rem;
+    border: dotted 2px rgb(11, 41, 67);
+}
+
+.bg-color{
+    background-color: rgba(0, 0, 0, 0.64);
+}
+
+.d_flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
