@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link a boostrap-->
+    <!--Enlace link a boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Logo Favicon-->
     <link rel="shortcut icon" href="img/fs-logo.png" type="image/x-icon">
+    <!-- Enlace link de Css-->
     <link rel="stylesheet" href="css/style.css">
     
     <title>Desarollador Freelancer</title>
 </head>
-
-<body class="bg-imagen">
-    
+<!--Imagen de fondo-->
+<body class="bg-imagen contenedor">
+  <!--Inicia nav-->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <!--Logo pricipal nav-->
-          <a class="navbar-brand" href="/index.html">
-            <img src="/img/fs-logo.png" alt="logo">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/fs-logo.png" alt="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,16 +28,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/pages/clientes.html">Clientes</a>
+                <a class="nav-link" aria-current="page" href="pages/clientes.html">Clientes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/promociones.html">Promociones</a>
+                <a class="nav-link" href="pages/promociones.html">Promociones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/sobre-mi.html">Sobre Nosotros</a>
+                <a class="nav-link" href="pages/sobre-mi.html">Sobre Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
               </li>
               
             </ul>
@@ -43,81 +45,102 @@
           </div>
         </div>
       </nav>
-
-        <!-- Termina nav-->
+    <!-- Termina nav-->
         <div class="titulo-freelancer">
-            <h2>Facundo Sarmiento Freelancer</h2>
+            <h2>Facundo Sarmiento <span>Freelancer</span></h2>
         </div> 
-        <!--Termina div nombre-->
-    
+      <!--Termina div nombre-->
+      <!--Imagen hero de fondo-->
         <header>
             <img class="hero" src="img/hero.jpg" alt="imagen">
         </header>
-        
-        <!-- Termina header imagen-->
-        <main class="text-center">
-            <h1>Diseño y Desarollo web</h1>
-            <img class="persona" src="/img/4400_12_07.jpg" alt="persona">
 
-            <p>Hola mi nombre es Facundo Sarmiento, tengo 28 años y Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Illo vitae odit quas molestias eius numquam quis ipsam nostrum at quaerat et sit 
-                temporibus asperiores blanditiis adipisci delectus, enim quibusdam neque Lorem ipsum dolor sit amet consectetur, 
-                adipisicing elit. Consequatur maiores atque facere voluptatum exercitationem ea, quasi eligendi id facilis doloribus 
-                non corrupti possimus nulla, in illum ratione dolor, reiciendis aspernatur..</p>
+      <!-- Termina header imagen hero-->
+      <!--Empieza contenido principal-->
+        <main class="text-center contenedor">
+      <!--Texto de promocion-->
+          <div class="crea-tu-pagina">
+            <h1>Creamos tu página web</h1>
+            <p> -Te escuchamos y hacemos tus ideas realidad.</p>
+            <p>-Desarrollamos tu sitio web desde cero.</p>
+            <p>-Redactamos los textos, elegimos las imágenes, programamos, diseñamos el sitio y lo cargamos a la web.</p>
+            <p>Todo en 15 días</p>
+            <button type="button">Contactanos</button>
+          </div>
+        <!--Termina texto de promocion-->
+        <!--Introduccion sobre mi-->
+            <div class="desarrollo-web">
+              <h2>Diseño y Desarollo web</h2>
+              <div class="sobre-mi contenedor">
+                <div class="sobre-mi_img">
+                  <img class="persona" src="img/4400_12_07.jpg" alt="persona">
+                </div>
+                <div class="sobre-mi_texto">
+                  <p>Hola mi nombre es Facundo Sarmiento, tengo 28 años y Lorem ipsum dolor sit amet consectetur, 
+                      adipisicing elit. Illo vitae odit quas molestias eius numquam quis ipsam nostrum at quaerat et sit 
+                      temporibus asperiores blanditiis adipisci delectus, enim quibusdam neque Lorem ipsum dolor sit amet consectetur, 
+                      adipisicing elit. Consequatur maiores atque facere voluptatum exercitationem ea, quasi eligendi id facilis doloribus 
+                      non corrupti possimus nulla, in illum ratione dolor, reiciendis aspernatur..</p>
+                </div>
+              </div>
+            </div>
+          <!--Termina introduccion sobre mi-->
+          <!--Categoria de servicios a ofrecer-->
+            <div class=" servicios contenedor">
+              <h2>Mis servicios</h2>
+              <section class="contenedor-color">
+                  <h3>Diseño Web</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
+                      <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
+                      <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+                      <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
+                  </svg>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas, eius ut aliquid iure deserunt non 
+                      doloribus aut tempore? Perferendis fugit, incidunt quos asperiores esse eum quidem animi labore vero Lorem ipsum dolor sit, 
+                      amet consectetur adipisicing elit. Quae nulla, voluptas fugit harum repudiandae, maiores placeat cum officiis praesentium a 
+                      sit dolorem impedit aspernatur inventore reiciendis! Obcaecati sint consectetur odit.</p>
+              </section>
 
-            <h2>Mis servicios</h2>
-            <section class="contenedor">
-                <h3>Diseño Web</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
-                    <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
-                    <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
-                    <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
-                </svg>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptas, eius ut aliquid iure deserunt non 
-                    doloribus aut tempore? Perferendis fugit, incidunt quos asperiores esse eum quidem animi labore vero Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Quae nulla, voluptas fugit harum repudiandae, maiores placeat cum officiis praesentium a 
-                    sit dolorem impedit aspernatur inventore reiciendis! Obcaecati sint consectetur odit.</p>
-            </section>
+              <section class="contenedor-color">
+                  <h3>Aplicaciones Web</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <line x1="4" y1="10" x2="4" y2="16" />
+                      <line x1="20" y1="10" x2="20" y2="16" />
+                      <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
+                      <line x1="8" y1="3" x2="9" y2="5" />
+                      <line x1="16" y1="3" x2="15" y2="5" />
+                      <line x1="9" y1="18" x2="9" y2="21" />
+                      <line x1="15" y1="18" x2="15" y2="21" />
+                  </svg>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus facilis laudantium nihil porro velit, 
+                      quo doloribus quae nobis obcaecati recusandae commodi at ipsam unde, nulla saepe in odit, veniam eveniet Lorem ipsum dolor 
+                      sit amet consectetur adipisicing elit. Cum doloribus dolorum id ipsa, fugiat quidem a dignissimos assumenda ut vitae mollitia 
+                      atque et, accusamus, repudiandae sint at. Fuga, laboriosam assumenda!/p>
+              </section>
 
-            <section class="contenedor">
-                <h3>Aplicaciones Web</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="10" x2="4" y2="16" />
-                    <line x1="20" y1="10" x2="20" y2="16" />
-                    <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
-                    <line x1="8" y1="3" x2="9" y2="5" />
-                    <line x1="16" y1="3" x2="15" y2="5" />
-                    <line x1="9" y1="18" x2="9" y2="21" />
-                    <line x1="15" y1="18" x2="15" y2="21" />
-                </svg>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus facilis laudantium nihil porro velit, 
-                    quo doloribus quae nobis obcaecati recusandae commodi at ipsam unde, nulla saepe in odit, veniam eveniet Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Cum doloribus dolorum id ipsa, fugiat quidem a dignissimos assumenda ut vitae mollitia 
-                    atque et, accusamus, repudiandae sint at. Fuga, laboriosam assumenda!/p>
-            </section>
-
-            <section class="contenedor">
-                <h3>E-Comerce</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="3" y="5" width="18" height="14" rx="3" />
-                    <line x1="3" y1="10" x2="21" y2="10" />
-                    <line x1="7" y1="15" x2="7.01" y2="15" />
-                    <line x1="11" y1="15" x2="13" y2="15" />
-                </svg>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus tenetur suscipit voluptates, expedita reiciendis minus 
-                    facilis nam quo consequuntur error illum blanditiis distinctio nemo. Nemo, nisi blanditiis! Beatae, rerum vero Lorem ipsum dolor 
-                    sit amet consectetur adipisicing elit. Earum, debitis consequatur. Aliquid adipisci officiis libero consectetur eius. Nisi dolores 
-                    iste dolorum eligendi distinctio, tempore, debitis ipsam consectetur explicabo architecto fuga.</p>
-            </section>
+              <section class="contenedor-color">
+                  <h3>E-Comerce</h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <rect x="3" y="5" width="18" height="14" rx="3" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                      <line x1="7" y1="15" x2="7.01" y2="15" />
+                      <line x1="11" y1="15" x2="13" y2="15" />
+                  </svg>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus tenetur suscipit voluptates, expedita reiciendis minus 
+                      facilis nam quo consequuntur error illum blanditiis distinctio nemo. Nemo, nisi blanditiis! Beatae, rerum vero Lorem ipsum dolor 
+                      sit amet consectetur adipisicing elit. Earum, debitis consequatur. Aliquid adipisci officiis libero consectetur eius. Nisi dolores 
+                      iste dolorum eligendi distinctio, tempore, debitis ipsam consectetur explicabo architecto fuga.</p>
+              </section>
+            </div>
+          <!--Termina categoria de servicios a ofrecer-->
         </main>
-
-    <!-- Termina main-->
-    
-        <footer class="footer bg-color">
+        <!-- Termina main-->
+        <!--Empieza el footer-->
+        <footer class="footer">
             <div>
                 <a href="https://www.facebook.com/" target="_blank">
                     <img src="img/iconos/facebook.png" alt="facebook">

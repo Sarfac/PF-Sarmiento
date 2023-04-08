@@ -1,17 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tilt+Neon&display=swap');
 
-/* 1 rem = 10px*/
+
 html{
-    font-size: 62.5%;
+    box-sizing: border-box; /*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+/*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+*, *:before, *:after { 
+    box-sizing: inherit;
+  }
+
+/*Globales*/
+body{
+    font-family: 'Tilt Neon', cursive; 
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+h1,h2,h3{
+    font-family: 'Tilt Neon', cursive;
+    
 }
 
-/*Selector universal*/
-*{
-    font-family: 'Tilt Neon', cursive; 
+h1{
+    font-size: 2rem;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+    
+}
+    
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+img{
+     max-width: 100%; 
+}
+
+.text-center{
+    text-align: center;
+}
+.contenedor{
+    margin: 0 auto;
 }
 
 .navbar{
-    background-color: #2B6FA6;
+    background-color: #037bc0;
     
 }
 .navbar img{
@@ -21,7 +61,7 @@ html{
 .navbar ul li a{
     font-size: 2rem;
     color: aliceblue;
-    margin-right: 1em;
+    margin-right: 1rem;
 
 }
 
@@ -30,55 +70,23 @@ html{
     font-family: 'Tilt Neon', cursive;
 }
 
-.carousel-inner {
-    height: 80rem;
+
+@media (min-width: 768px) {
+    .hero{
+        width: 100%;
+    }
+    
 }
+
 .persona{
     width: 30rem;
     height: 30rem;
 }
 
-.footer{
-    display: flex;
-    justify-content:space-evenly;
-}
-
-.hero{
-    width: 100%;
-    height: 100%;
-}
-
-
-h1,h2,h3{
-    font-family: 'Tilt Neon', cursive;
-    color: rgb(27, 68, 102); 
-}
-
-h1{
-    font-size: 6rem;
-}
-h2{
-    font-size: 4.5rem;
-}
-h3{
-    font-size: 3rem;
-}
-p{
-    font-size: 2rem;
-}
-
-.text-center{
-    text-align: center;
-}
 
 .bg-imagen{
     background-image: url(../img/back-ground.jpg);
     background-repeat:calc(100%);
-}
-
-header img{
-    width: 100%;
-    height: 60rem;
 }
 
 .titulo-freelancer{  
@@ -86,22 +94,187 @@ header img{
     text-align: center;
     padding: 1rem 0;
 }
+.titulo-freelancer h2{
+    font-weight: 700;
+}
+.titulo-freelancer span{
+    color: #037bc0;
+}
+.crea-tu-pagina{
+    height: 45rem;
+    background-color: #037bc0;
+    margin-top: 4rem;
+    
+}
 
-.contenedor{
+.crea-tu-pagina{
+    height: 30rem;
+    padding: 2rem;
+}
+
+@media (min-width: 800px){
+    .crea-tu-pagina{
+        height: 45rem;
+        padding: 3rem;
+    }
+    .crea-tu-pagina p {
+
+        font-size: 3rem;
+        line-height: 5rem;
+        text-align: left;
+        padding-left:  20rem ;
+       }
+    
+}
+
+.crea-tu-pagina button{
+    width: 20rem;
+    height: 5rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+
+.desarrollo-web h2{
+   margin: 5rem 0 5rem 0;
+   font-size: 4rem;
+   font-weight: 700;
+
+}
+.sobre-mi{
+    background-color: #037bc0;
+    width: 80%;
+    
+}
+
+@media(min-width:800px){
+    .sobre-mi{
+        display: grid;
+        grid-template-columns: 30rem 60rem;
+        width: 90rem;
+        background-color: #037bc0;
+        border-radius: 1rem;
+        align-items: center;
+        
+    }
+}
+.sobre-mi_texto{
+    padding: 0 5rem;
+    font-size: 2rem;
+    padding: 3rem;
+    
+}
+
+.contenedor-color{
     width: 90%;
-    background-color: rgba(176, 182, 187, 0.695);
-    margin: 3rem;
+    background-color:#037bc0b6;
+    margin: 0 auto 3rem auto;
     padding: 1.5rem;
     border: dotted 2px rgb(11, 41, 67);
 }
 
-.bg-color{
-    background-color: rgba(0, 0, 0, 0.64);
-}
+
+
 
 .d_flex-center{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.servicios h2{
+    margin: 5rem 0 5rem 0;
+    font-size: 5rem;
+    font-weight: 700;
+
+}
+
+.footer{
+    height: 17rem;
+    background-color: #03466c84;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    margin-top: 3rem;
+
+}
+@media (min-width:800px){
+    .footer{
+        height: 10rem;
+    }
+}
+/* Css pagina clientes*/
+
+.clientes-150 {
+    background-color: #037bc0;
+    text-align: center;
+    font-weight: 700;
+    padding: 5rem;
+}
+
+@media (min-width: 800px) {
+    .clientes-150{
+        font-size: 5rem;
+        line-height: 4rem;
+        
+    }
     
+}
+@media(min-width:800px){
+    .clientes{
+        padding: 0 5rem;
+    }
+    
+}
+
+.clientes h1{
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.card{
+    background-color: #037bc0;
+    height: 60rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+}
+.card-img-top{
+    height: 35rem;
+}
+.btn{
+    background-color: black;
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+    color: aliceblue;
+
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Css pagina promociones*/
+
+.section-promo{
+    background-color: #037bc0;
+    height: 30rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 2rem 10rem;
+}
+
+.contenedor-web{
+    background-color: #037bc0;
+    width: 40rem;
+    border-radius: 10rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+.contenedor-web-principal{
+    display: flex;
+    justify-content: center;
 }
