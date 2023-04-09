@@ -5,49 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/fs-logo.png" type="image/x-icon">
+    <!--Enlace link a boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Enlace link de Css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Desarollador Freelancer</title>
 </head>
 
 <body class="bg-imagen">
-    
-        <nav>
-            <a href="../index.html">
-                <img src="../img/fs-logo.png" alt="logo Facundo">
-            </a>
-            <ul>
-                <li>
-                    <a href="sobre-mi.html">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="clientes.html">Clientes</a>
-                </li>
-                <li>
-                    <a href="promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                
-            </ul>
-        </nav>
-    
-        <header>
-            <img src="../img/hero.png" alt="imagen">
-        </header>
+        <!--Inicia nav-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!--Logo pricipal nav-->
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/fs-logo.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="promociones.html">Promociones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre-mi.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Termina nav-->
 
+       
         <main>
-            <h1>Sobre Mi</h1>
+            <h1 class="titulo-reseñas">Sobre Mi</h1>
+            
+            <div class="contenedor-sobre-mi">
+                <img src="../img/web-sobre-mi.jpg" alt="">
+                <div class="contenedor-sobre-mi_texto">
+                  <h2>- Mi nombre es Facundo Sarmiento</h2>
+                  <p>- Amo los desafíos programables, y me encanta ir de la mano con las novedades del mercado online.</p>
+                  <p>- Junto a mi equipo Desarrollamos y Diseñamos páginas Web, Aplicaciones Web y tiendas E-commerce, simplificamos tu sistema de gestión con plataforma inteligente y auto gestionable.</p>
+                  <p>- Nuestro sello se diferencia por calidad, resultado y optimismo.</p>
+                </div>
+            </div>
+
+            <h2 class="titulo-reseñas">Algunas reseñas de nuestros clientes</h2>
+
+            <div class="contenedor-reseñas">
+
+                <div class="reseñas">
+                  <img src="../img/logo-sobre-mi1.jpg" alt="">
+                  <p>Agradecida con todo el apoyo en la construcción de mi identidad gráfica y diseño web, ofrecen un servicio completo y muy buena atención".
+                    Ana Salazar de AVS</p>
+                </div>
+                <div class="reseñas">
+                  <img src="../img/logo-sobre-mi2.png" alt=" ">
+                  <p>"Me encanto trabajar con ControlAlt Project son muy calificado, excelente atención y cumplieron con todos mis requerimiento, los recomiendo 100%".
+
+                    Ines Cepero de Activa y Salud</p>
+                </div>
+                <div class="reseñas">
+                  <img src="../img/logo-sobre-mi3.png" alt="">
+                  <p>"Tengo años trabajando con ControlAlt Project, me diseñaron mis páginas web, hicieron el desarrollo de las aulas virtuales de mi negocio y la configuración del sistema de gestión de clientes. Estoy profundamente satisfecha en cuanto a la calidad del servicio que prestan y trato".
+                    Nelly Nieves de Abstract Training Center</p>
+                </div>
+                <div class="reseñas">
+                  <img src="../img/logo-sobre-mi4.png" alt="">
+                  <p>"En ControlAlt Project encontré mucho talento, cumplieron todos los requisitos que les pedí, han realizado tres webs para mis negocios y los recomiendo 100%".
+
+                    Wilson Pouerit de La Radio es Ahora</p>
+                </div>
+            </div>
         </main>
 
-        <footer class="bg-color">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../img/iconos/facebook.png" alt="facebook">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img src="../img/iconos/twitter.png" alt="twitter">
-            </a>
-            <p>Todos los derechos reservados</p>
-        </footer>
-
+              <!--Empieza el footer-->
+              <footer class="footer">
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../img/iconos/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="../img/iconos/twitter.png" alt="twitter">
+                    </a>
+                </div>
+                <p>Todos los derechos reservados</p>
+            </footer>
+        <!-- Termina footer-->
+<!--Cargo de js de boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        
 </body>

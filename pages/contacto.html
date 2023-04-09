@@ -5,70 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/fs-logo.png" type="image/x-icon">
+    <!--Enlace link a boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Enlace link de Css-->
     <link rel="stylesheet" href="../css/style.css">
     <title>Desarollador Freelancer</title>
 </head>
 
 <body class="bg-imagen"> 
-        <nav>
-            <a href="../index.html">
-                <img src="../img/fs-logo.png" alt="logo Facundo">
-            </a>
-            <ul>
-                <li>
-                    <a href="sobre-mi.html">Sobre mi</a>
-                </li>
-                <li>
-                    <a href="clientes.html">Clientes</a>
-                </li>
-                <li>
-                    <a href="promociones.html">Promociones</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                
-            </ul>
-        </nav>
-    
-        <header>
-            <img src="../img/hero.png" alt="imagen">
-            
-        </header>
 
+    <!--Inicia nav-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <!--Logo pricipal nav-->
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/fs-logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="clientes.html">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="promociones.html">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-mi.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <header>
+            <div class="hero-contacto ">
+                <p>Cordoba, Argentina</p>
+                <div class="svg-hero_contacto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                </div>
+                <p>Para Todo el mundo, no importa donde nos contactes</p>
+            </div>
+        </header>
         <main>
-            <h1>Contacto</h1>
-            <form>
+            <h1 class="titulo-contacto">Contacto</h1>
+            <form class="formulario">
                 <fieldset>  
                     <legend>Contactanos llenando todos los campos</legend>
-    
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Nombre">
-    
-                    <label for="">Numero</label>
-                    <input type="tel" placeholder="Tu numero">
-    
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Tu correo">
-    
-                    <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="contenedor-campos">
+                        <div class="campos">
+                            <label for="">Nombre</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="campos">
+                            <label for="">Numero</label>
+                            <input type="tel" placeholder="Tu numero">
+                        </div>
+                        <div class="campos">
+                            <label for="">Correo</label>
+                            <input type="email" placeholder="Tu correo">
+                        </div>
+                        <div class="campos">
+                            <label for="">Mensaje</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
     
                     <input type="submit" value="Enviar">
     
                 </fieldset>
             </form>
-        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13619.729053895644!2d-64.18590252065428!3d-31.4159922882418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1678239179321!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="titulo-contacto"> ¿Donde nos encuentras?</p>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13619.729053895644!2d-64.18590252065428!3d-31.4159922882418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1678239179321!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
-
-        <footer class="bg-color">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../img/iconos/facebook.png" alt="facebook">
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-                <img src="../img/iconos/twitter.png" alt="twitter">
-            </a>
+           <!--Empieza el footer-->
+           <footer class="footer">
+            <div>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="../img/iconos/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.twitter.com/" target="_blank">
+                    <img src="../img/iconos/twitter.png" alt="twitter">
+                </a>
+            </div>
             <p>Todos los derechos reservados</p>
         </footer>
+    <!-- Termina footer-->
+<!--Cargo de js de boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+     
 </body>

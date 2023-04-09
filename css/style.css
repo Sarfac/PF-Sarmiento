@@ -50,6 +50,7 @@ img{
     margin: 0 auto;
 }
 
+/*css para la navbar*/
 .navbar{
     background-color: #037bc0;
     
@@ -70,7 +71,8 @@ img{
     font-family: 'Tilt Neon', cursive;
 }
 
-
+/*Css para la pagina index*/
+/* Mq para la imagen principal del index*/
 @media (min-width: 768px) {
     .hero{
         width: 100%;
@@ -171,8 +173,6 @@ img{
     padding: 1.5rem;
     border: dotted 2px rgb(11, 41, 67);
 }
-
-
 
 
 .d_flex-center{
@@ -277,4 +277,109 @@ img{
 .contenedor-web-principal{
     display: flex;
     justify-content: center;
+}
+
+/*Css pagina contacto*/
+
+.hero-contacto{
+    height: 51rem;
+    background-image: url(../img/hero-contacto.jpg);
+    
+}
+
+.hero-contacto p{
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    padding: 6rem;
+    background-color: #ffffff6f;
+}
+.svg-hero_contacto{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    background-color:  #ffffff6f ;
+}
+
+.formulario{
+    border: none;
+    width: 100rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #037bc0;
+}
+.formulario legend{
+    color: yellow;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.campos{
+    margin-bottom: 1rem;
+}
+
+.campos label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.mapa{
+    width: 100%;
+}
+
+.titulo-contacto{
+    text-align: center;
+    font-weight: 700;
+    margin: 5rem 0;
+    font-size: 5rem;
+}
+
+/* Css pagina sobre mi*/
+
+.contenedor-sobre-mi{
+    background-color: #037bc0;
+    display: flex;
+    height: 30rem;
+    font-size: 2rem;
+}
+
+
+.contenedor-sobre-mi_texto{
+    flex-direction: column;
+    padding: 7rem;
+    line-height: 3rem;
+
+}
+
+.contenedor-sobre-mi_texto h2{
+    color: yellowgreen;
+    
+}
+.titulo-reseñas{
+    text-align: center;
+    font-weight: 700;
+    margin: 4rem 0;
+}
+
+.contenedor-reseñas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10rem
+    
+   
+}
+
+.reseñas{
+    background-color: #ffffff;
+    border-radius: 2rem;
+    height: 15rem;
+    display: flex;
+    margin: 2rem 2rem;
+}
+.reseñas p{
+    padding: 3rem;
+
 }
