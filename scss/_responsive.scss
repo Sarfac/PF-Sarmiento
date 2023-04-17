@@ -1,0 +1,54 @@
+//Responsive de la pagina index
+// Mq para la imagen principal del index
+@media (min-width: 768px) {
+    .hero{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 800px){
+    .crea-tu-pagina{
+        height: 45rem;
+        padding: 3rem;
+    p {
+        line-height: 5rem;
+        text-align: left;
+        padding-left:  20rem ;
+    }    
+}
+}
+
+@media(min-width:800px){
+    .sobre-mi{
+        display: grid;
+        grid-template-columns: 40rem 60rem;
+        width: 100rem;
+        border-radius: 1rem;
+        align-items: center;
+    }
+    .sobre-mi_texto p{
+    padding: 0 5rem;
+    font-size: 2rem;
+    padding: 3rem;
+    line-height: 3rem;
+}
+}
+
+
+//Responsive pagina clientes
+
+@media (min-width: 800px) {
+    .clientes-150{
+        font-size: 5rem;
+        line-height: 4rem;
+        
+    }
+    
+}
+@media(min-width:800px){
+    .clientes{
+        padding: 0 5rem;
+    }
+    
+}

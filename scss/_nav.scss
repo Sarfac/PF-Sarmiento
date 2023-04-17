@@ -1,0 +1,16 @@
+/*css para la navbar*/
+.navbar{
+    background-color: #037bc0;
+    img{
+        width: 50px;
+    }
+    a{
+        font-size: 2rem;
+        color: aliceblue;
+        margin-right: 1rem;
+        font-family: 'Tilt Neon', cursive;
+        &:hover{
+            color: black;
+        }
+    }    
+}

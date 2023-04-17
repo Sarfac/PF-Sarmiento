@@ -1,0 +1,16 @@
+.section-promo{
+    background-color: $colorPrincipal;
+    line-height: 5rem;
+    padding: 2rem 10rem;
+}
+.contenedor-web{
+    background-color: $colorPrincipal;
+    width: 40rem;
+    border-radius: 10rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+.contenedor-web-principal{
+    display: flex;
+    justify-content: center;
+}

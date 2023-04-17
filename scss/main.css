@@ -1,0 +1,340 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Tilt+Neon&display=swap");
+html {
+  box-sizing: border-box; /*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+  font-size: 62.5%; /* 1 rem = 10px*/
+}
+
+/*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Tilt Neon", cursive;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.contenedor {
+  margin: 0 auto;
+}
+
+.bg-imagen {
+  background-image: url(../img/back-ground.jpg);
+  background-repeat: 100%;
+}
+
+.footer {
+  height: 17rem;
+  background-color: rgba(3, 70, 108, 0.5176470588);
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    height: 10rem;
+  }
+}
+/*css para la navbar*/
+.navbar {
+  background-color: #037bc0;
+}
+.navbar img {
+  width: 50px;
+}
+.navbar a {
+  font-size: 2rem;
+  color: aliceblue;
+  margin-right: 1rem;
+  font-family: "Tilt Neon", cursive;
+}
+.navbar a:hover {
+  color: black;
+}
+
+/*Css para la pagina index*/
+.persona {
+  width: 30rem;
+  height: 30rem;
+}
+
+.titulo-freelancer {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 1rem 0;
+}
+.titulo-freelancer h2 {
+  font-weight: 700;
+}
+.titulo-freelancer span {
+  color: #037bc0;
+}
+
+.crea-tu-pagina {
+  height: 30rem;
+  background-color: #037bc0;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+.crea-tu-pagina button {
+  width: 20rem;
+  height: 5rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.desarrollo-web h2 {
+  margin: 5rem 0 5rem 0;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.sobre-mi {
+  background-color: #037bc0;
+  width: 80%;
+}
+
+.contenedor-color {
+  width: 90%;
+  background-color: #037bc0;
+  margin: 0 auto 3rem auto;
+  padding: 1.5rem;
+  border: dotted 2px rgb(11, 41, 67);
+}
+
+.d_flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios h2 {
+  margin: 5rem 0 5rem 0;
+  font-size: 5rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    width: 100%;
+  }
+}
+@media (min-width: 800px) {
+  .crea-tu-pagina {
+    height: 45rem;
+    padding: 3rem;
+  }
+  .crea-tu-pagina p {
+    line-height: 5rem;
+    text-align: left;
+    padding-left: 20rem;
+  }
+}
+@media (min-width: 800px) {
+  .sobre-mi {
+    display: grid;
+    grid-template-columns: 40rem 60rem;
+    width: 100rem;
+    border-radius: 1rem;
+    align-items: center;
+  }
+  .sobre-mi_texto p {
+    padding: 0 5rem;
+    font-size: 2rem;
+    padding: 3rem;
+    line-height: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  .clientes-150 {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 800px) {
+  .clientes {
+    padding: 0 5rem;
+  }
+}
+.clientes-150 {
+  background-color: #037bc0;
+  font-weight: 700;
+  padding: 5rem;
+}
+.clientes-150 p {
+  text-align: center;
+}
+
+.clientes h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.card {
+  background-color: #037bc0;
+  height: 60rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+
+.card-img-top {
+  height: 35rem;
+}
+
+.btn {
+  background-color: black;
+  width: 15rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-promo {
+  background-color: #037bc0;
+  line-height: 5rem;
+  padding: 2rem 10rem;
+}
+
+.contenedor-web {
+  background-color: #037bc0;
+  width: 40rem;
+  border-radius: 10rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.contenedor-web-principal {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-sobre-mi {
+  background-color: #037bc0;
+}
+
+@media (min-width: 800px) {
+  .contenedor-sobre-mi {
+    display: flex;
+    height: 30rem;
+    font-size: 2rem;
+  }
+}
+.contenedor-sobre-mi_texto {
+  flex-direction: column;
+  padding: 7rem;
+  line-height: 3rem;
+}
+.contenedor-sobre-mi_texto h2 {
+  color: yellowgreen;
+}
+
+@media (min-width: 800px) {
+  .contenedor-reseñas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10rem;
+  }
+}
+.titulo-reseñas {
+  text-align: center;
+  font-weight: 700;
+  margin: 4rem 0;
+}
+
+.reseñas {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  display: flex;
+  margin: 2rem 2rem;
+}
+.reseñas p {
+  padding: 3rem;
+}
+
+.hero-contacto {
+  height: 55rem;
+  background-image: url(../img/hero-contacto.jpg);
+}
+.hero-contacto p {
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+  padding: 6rem 0;
+  background-color: rgba(255, 255, 255, 0.4352941176);
+  line-height: 3rem;
+}
+
+.svg-hero_contacto {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+  background-color: rgba(255, 255, 255, 0.4352941176);
+}
+
+.formulario {
+  border: none;
+  width: 100rem;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #037bc0;
+}
+.formulario legend {
+  color: yellow;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.campos {
+  margin-bottom: 1rem;
+}
+.campos label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.titulo-contacto {
+  text-align: center;
+  font-weight: 700;
+  margin: 5rem 0;
+  font-size: 5rem;
+}/*# sourceMappingURL=main.css.map */

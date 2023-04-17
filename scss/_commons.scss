@@ -1,0 +1,59 @@
+html{
+    box-sizing: border-box; /*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+/*aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien*/
+*, *:before, *:after { 
+    box-sizing: inherit;
+}
+
+//Glogabales//
+body{
+    font-family: $fuentePrincipal; 
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+h1{
+    font-size: $textoGrande;
+}
+
+h2{
+    font-size: $textoGrande;
+}
+
+h3{
+    font-size: $textoMediano;
+}
+
+img{
+     max-width: 100%; 
+}
+.text-center{
+    text-align: center;
+}
+.contenedor{
+    margin: 0 auto;
+}
+.bg-imagen{
+    background-image: url(../img/back-ground.jpg);
+    background-repeat:calc(100%);
+}
+
+
+//Css general para el footer
+.footer{
+    height: 17rem;
+    background-color: #03466c84;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    margin-top: 3rem;
+
+}
+@media (min-width:800px){
+    .footer{
+        height: 10rem;
+    }
+}
