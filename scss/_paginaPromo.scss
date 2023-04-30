@@ -1,16 +1,36 @@
 .section-promo{
     background-color: $colorPrincipal;
-    line-height: 5rem;
-    padding: 2rem 10rem;
+    padding: 5rem;
+    p{
+        padding: 1.5rem;
+    }
+} 
+@media (min-width:800px){
+    .tipos-paginas{
+        width: 120rem;}
+}
+
+.titulos-promo{
+    font-weight: $textoNegrita;
+    padding: 2rem;
+    font-size: 4rem;
+}
+
+
+    .contenedor-web{
+        background-color: $colorPrincipal;
+        
+        border-radius: 10rem;
+        padding: 2rem; 
+        margin: 2rem;
+    }
+
+@media(min-width:800px){
+    .contenedor-web-principal{
+        display: flex;
+        justify-content: center;
 }
 .contenedor-web{
-    background-color: $colorPrincipal;
-    width: 40rem;
-    border-radius: 10rem;
-    padding: 2rem;
-    margin: 2rem;
+    width: 100rem;
 }
-.contenedor-web-principal{
-    display: flex;
-    justify-content: center;
 }

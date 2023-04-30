@@ -1,28 +1,33 @@
 .hero-contacto{
     height: 55rem;
     background-image: url(../img/hero-contacto.jpg);
+    background-size: cover;
+    
     p{
-        font-weight: 700;
-        font-size: 4rem;
+        font-weight: $textoNegrita;
+        font-size: $textoGrande;
         text-align: center;
         padding: 6rem 0;
-        background-color: #ffffff6f;
         line-height: 3rem;
     }
+    .svg-hero_contacto{
+        display: flex;
+        justify-content: center;
+        padding: 4rem 0;
+        
+    }
+    .hero-contacto_texto{
+        background-color: #ffffff6f;
+        height: 55rem;
+    }
 }
-.svg-hero_contacto{
-    display: flex;
-    justify-content: center;
-    margin: 4rem 0;
-    background-color:  #ffffff6f ;
-}
+
 .formulario{
     border: none;
-    width: 100rem;
     margin: 5rem auto;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: #037bc0;
+    background-color: $colorPrincipal;
     legend{
         color: yellow;
         font-size: 2rem;
@@ -31,12 +36,21 @@
         font-weight: 700;
     }
 }
+
+@media(min-width:800px){
+    .formulario{
+        width: 100rem;
+    }
+}
 .campos{
     margin-bottom: 1rem;
     label{
         font-weight: bold;
         margin-bottom: 0.5rem;
         display: block;
+    }
+    input, textarea{
+        width: 100%;
     }
 }
 .mapa{
@@ -48,4 +62,5 @@
     font-weight: 700;
     margin: 5rem 0;
     font-size: 5rem;
+    line-height: 1;
 }

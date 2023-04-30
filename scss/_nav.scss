@@ -1,14 +1,14 @@
 /*css para la navbar*/
 .navbar{
-    background-color: #037bc0;
+    background-color: $colorPrincipal;
     img{
         width: 50px;
     }
     a{
-        font-size: 2rem;
+        font-size: $textoMediano;
         color: aliceblue;
         margin-right: 1rem;
-        font-family: 'Tilt Neon', cursive;
+        font-family: $fuentePrincipal;
         &:hover{
             color: black;
         }

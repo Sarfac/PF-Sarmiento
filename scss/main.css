@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 img {
@@ -50,7 +50,7 @@ img {
   background-color: rgba(3, 70, 108, 0.5176470588);
   color: black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3rem;
   margin-top: 3rem;
 }
@@ -62,7 +62,7 @@ img {
 }
 /*css para la navbar*/
 .navbar {
-  background-color: #037bc0;
+  background-color: rgb(3, 123, 192);
 }
 .navbar img {
   width: 50px;
@@ -77,12 +77,6 @@ img {
   color: black;
 }
 
-/*Css para la pagina index*/
-.persona {
-  width: 30rem;
-  height: 30rem;
-}
-
 .titulo-freelancer {
   background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
@@ -92,14 +86,21 @@ img {
   font-weight: 700;
 }
 .titulo-freelancer span {
-  color: #037bc0;
+  color: rgb(3, 123, 192);
 }
 
 .crea-tu-pagina {
-  height: 30rem;
-  background-color: #037bc0;
+  height: 35rem;
+  background-color: rgb(3, 123, 192);
   margin-top: 4rem;
   padding: 2rem;
+}
+.crea-tu-pagina h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.crea-tu-pagina p {
+  color: white;
 }
 .crea-tu-pagina button {
   width: 20rem;
@@ -108,36 +109,54 @@ img {
   border-radius: 1rem;
 }
 
-.desarrollo-web h2 {
-  margin: 5rem 0 5rem 0;
-  font-size: 4rem;
-  font-weight: 700;
+.titulos-pag {
+  font-size: 5rem;
+  margin: 3rem 0;
+}
+
+.persona {
+  width: 30rem;
+  height: 30rem;
 }
 
 .sobre-mi {
-  background-color: #037bc0;
+  background-color: rgb(3, 123, 192);
+  border-radius: 1rem;
+  padding: 2rem;
   width: 80%;
 }
 
 .contenedor-color {
-  width: 90%;
-  background-color: #037bc0;
-  margin: 0 auto 3rem auto;
-  padding: 1.5rem;
-  border: dotted 2px rgb(11, 41, 67);
+  background-color: rgb(3, 123, 192);
+  border-radius: 2rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin: 3rem;
+}
+.contenedor-color h3 {
+  margin: 1.5rem 0;
+}
+.contenedor-color svg {
+  margin: 1.5rem 0;
+}
+.contenedor-color p {
+  color: white;
+  padding: 2rem;
+  line-height: 3rem;
 }
 
-.d_flex-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.servicios_contenedor {
+  display: block;
 }
 
-.servicios h2 {
-  margin: 5rem 0 5rem 0;
-  font-size: 5rem;
+@media (min-width: 800px) {
+  .servicios_contenedor {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contenedor-color {
+    width: 60rem;
+  }
 }
-
 @media (min-width: 768px) {
   .hero {
     width: 100%;
@@ -159,7 +178,6 @@ img {
     display: grid;
     grid-template-columns: 40rem 60rem;
     width: 100rem;
-    border-radius: 1rem;
     align-items: center;
   }
   .sobre-mi_texto p {
@@ -181,14 +199,22 @@ img {
   }
 }
 .clientes-150 {
-  background-color: #037bc0;
+  background-color: rgb(3, 123, 192);
   font-weight: 700;
   padding: 5rem;
 }
 .clientes-150 p {
   text-align: center;
 }
+.clientes-150 img {
+  display: none;
+}
 
+@media (min-width: 800px) {
+  .clientes-150 img {
+    display: block;
+  }
+}
 .clientes h1 {
   font-size: 5rem;
   font-weight: 700;
@@ -197,10 +223,14 @@ img {
 }
 
 .card {
-  background-color: #037bc0;
+  background-color: rgb(3, 123, 192);
   height: 60rem;
-  margin-bottom: 2rem;
-  border-radius: 2rem;
+  margin: 2rem;
+  border-radius: 0 0 2rem 2rem;
+}
+.card h2 {
+  color: white;
+  margin: 1rem 0;
 }
 
 .card-img-top {
@@ -220,28 +250,47 @@ img {
   flex-direction: column;
   align-items: center;
 }
+.card-body .card-text {
+  padding: 1.5rem;
+}
 
 .section-promo {
-  background-color: #037bc0;
-  line-height: 5rem;
-  padding: 2rem 10rem;
+  background-color: rgb(3, 123, 192);
+  padding: 5rem;
+}
+.section-promo p {
+  padding: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .tipos-paginas {
+    width: 120rem;
+  }
+}
+.titulos-promo {
+  font-weight: 700;
+  padding: 2rem;
+  font-size: 4rem;
 }
 
 .contenedor-web {
-  background-color: #037bc0;
-  width: 40rem;
+  background-color: rgb(3, 123, 192);
   border-radius: 10rem;
   padding: 2rem;
   margin: 2rem;
 }
 
-.contenedor-web-principal {
-  display: flex;
-  justify-content: center;
+@media (min-width: 800px) {
+  .contenedor-web-principal {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-web {
+    width: 100rem;
+  }
 }
-
 .contenedor-sobre-mi {
-  background-color: #037bc0;
+  background-color: rgb(3, 123, 192);
 }
 
 @media (min-width: 800px) {
@@ -278,6 +327,7 @@ img {
   border-radius: 2rem;
   display: flex;
   margin: 2rem 2rem;
+  align-items: center;
 }
 .reseñas p {
   padding: 3rem;
@@ -286,30 +336,31 @@ img {
 .hero-contacto {
   height: 55rem;
   background-image: url(../img/hero-contacto.jpg);
+  background-size: cover;
 }
 .hero-contacto p {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding: 6rem 0;
-  background-color: rgba(255, 255, 255, 0.4352941176);
   line-height: 3rem;
 }
-
-.svg-hero_contacto {
+.hero-contacto .svg-hero_contacto {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  padding: 4rem 0;
+}
+.hero-contacto .hero-contacto_texto {
   background-color: rgba(255, 255, 255, 0.4352941176);
+  height: 55rem;
 }
 
 .formulario {
   border: none;
-  width: 100rem;
   margin: 5rem auto;
   padding: 2rem;
   border-radius: 2rem;
-  background-color: #037bc0;
+  background-color: rgb(3, 123, 192);
 }
 .formulario legend {
   color: yellow;
@@ -319,6 +370,11 @@ img {
   font-weight: 700;
 }
 
+@media (min-width: 800px) {
+  .formulario {
+    width: 100rem;
+  }
+}
 .campos {
   margin-bottom: 1rem;
 }
@@ -326,6 +382,9 @@ img {
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
+}
+.campos input, .campos textarea {
+  width: 100%;
 }
 
 .mapa {
@@ -337,4 +396,5 @@ img {
   font-weight: 700;
   margin: 5rem 0;
   font-size: 5rem;
+  line-height: 1;
 }/*# sourceMappingURL=main.css.map */

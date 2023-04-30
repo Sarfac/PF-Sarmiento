@@ -5,7 +5,16 @@
     p{
         text-align: center;
     }
+    img{
+        display: none;
+    }
 }
+@media(min-width:800px){
+    .clientes-150 img{
+        display: block;
+    }
+}
+
 .clientes h1{
     font-size: 5rem;
     font-weight: $textoNegrita;
@@ -16,8 +25,12 @@
 .card{
     background-color: $colorPrincipal;
     height: 60rem;
-    margin-bottom: 2rem;
-    border-radius: 2rem;
+    margin: 2rem;
+    border-radius: 0  0  2rem 2rem;
+    h2{
+        color: white;
+        margin: 1rem 0;
+    }
 }
 .card-img-top{
     height: 35rem;
@@ -34,4 +47,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .card-text{
+        padding: 1.5rem;
+    }
 }

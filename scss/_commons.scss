@@ -6,12 +6,11 @@ html{
 *, *:before, *:after { 
     box-sizing: inherit;
 }
-
 //Glogabales//
 body{
     font-family: $fuentePrincipal; 
     line-height: 2rem;
-    font-size: 2rem;
+    font-size: $textoMediano;
 }
 
 h1{
@@ -23,7 +22,7 @@ h2{
 }
 
 h3{
-    font-size: $textoMediano;
+    font-size: $textoGrande;
 }
 
 img{
@@ -40,14 +39,13 @@ img{
     background-repeat:calc(100%);
 }
 
-
 //Css general para el footer
 .footer{
     height: 17rem;
     background-color: #03466c84;
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 3rem;
     margin-top: 3rem;
 
